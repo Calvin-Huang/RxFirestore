@@ -40,4 +40,8 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Firebase/Firestore'
   s.dependency 'RxSwift'
+  s.xcconfig = {
+    "FRAMEWORK_SEARCH_PATHS" => "'$(PODS_ROOT)/FirebaseFirestore'"
+  }
+  s.vendored_frameworks = ["${PODS_ROOT}/FirebaseFirestore/Frameworks/FirebaseFirestore.framework"]
 end
