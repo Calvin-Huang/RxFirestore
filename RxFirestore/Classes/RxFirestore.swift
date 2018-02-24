@@ -1,5 +1,5 @@
 import Foundation
-import Firebase
+import FirebaseFirestore
 import RxSwift
 
 struct FirestoreError {
